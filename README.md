@@ -1,45 +1,77 @@
-# Academic-Performance-Predictor
-Predicting student academic performance using data analysis and machine learning.
+# Academic Performance Predictor
 
-This project aims to analyze various student-related factors and determine their impact on academic performance using data science and machine learning techniques. By identifying key features and building predictive models, we can uncover patterns that contribute to student success.
+A Machine Learning-based application that predicts student academic performance using academic and demographic factors. The project analyzes student data, predicts performance levels, and automatically generates personalized student report cards with teacher remarks and improvement suggestions.
 
-🧠 Objective :
-Perform Exploratory Data Analysis (EDA) to understand the dataset.
-Identify important features influencing academic performance.
-Build and evaluate classification models to predict performance outcomes.
+## Project Overview
 
-📁 Dataset :
-The dataset includes socio-demographic, academic, and personal attributes of students.
-Key features: gender, age, study time, failures, health, parental education, etc.
-Target variable: academic performance (binary or multi-class)
+Educational institutions often find it difficult to identify students who may require additional academic support. This project uses Machine Learning to analyze student-related features and predict academic performance, helping educators identify students who need early intervention.
 
-🛠️ Technologies Used :
-Python 
-Jupyter Notebook
-NumPy
-Pandas
-Matplotlib
-Seaborn
-Scikit-learn (Logistic Regression, Decision Tree, Random Forest)
+The application also generates professional PDF report cards containing:
 
-📊 Project Structure :
-├── 📄 README.md
-├── 📓 Determining_Factors_Impacting_Academic_Performance.ipynb
-├── student_data.csv
+- Student Details
+- Academic Details
+- Predicted Performance
+- Teacher Remarks
+- Personalized Suggestions
 
-🚀 Steps Performed :
-Data Loading & Cleaning
-Handled missing values and basic preprocessing.
-Exploratory Data Analysis (EDA)
-Visualized distributions and correlations.
-Feature Engineering
-Encoded categorical data, normalized inputs.
-Model Building
-Trained Logistic Regression, Decision Tree, and Random Forest.
-Evaluation
-Compared model accuracy and confusion matrix results.
+## Features
 
-✅ Results :
-Identified key features influencing academic outcomes.
-Random Forest outperformed other models in accuracy.
-Decision trees provided interpretable rules for student classification.
+- Student Performance Prediction using Machine Learning
+- Data Preprocessing and Feature Engineering
+- Automatic Prediction on New Student Data
+- Personalized Teacher Remarks
+- Personalized Improvement Suggestions
+- Automatic PDF Report Card Generation
+- CSV Export of Prediction Results
+- Data Visualization
+- Model Evaluation using Classification Metrics
+
+## Technologies Used
+
+- Python
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- ReportLab
+- Jupyter Notebook
+
+## Project Structure
+
+Academic-Performance-Predictor/
+│── data/
+│ ├── Students_Database.csv
+│── notebooks/
+│ ├── Student_Performance_Prediction.ipynb
+│── outputs/
+│ ├── Student_Report_Output.csv
+│ ├── FINAL_REPORT_CARDS.pdf
+│── screenshots/
+│── README.md
+│── requirements.txt
+
+## Workflow
+
+1. Load Student Dataset
+2. Data Cleaning
+3. Handle Missing Values
+4. Feature Selection
+5. Data Preprocessing
+6. Train-Test Split
+7. Train Machine Learning Model
+8. Predict Student Performance
+9. Generate Teacher Remarks
+10. Generate Suggestions
+11. Export Results to CSV
+12. Generate PDF Report Cards
+
+## Evaluation Metrics
+
+The model can be evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- Confusion Matrix
